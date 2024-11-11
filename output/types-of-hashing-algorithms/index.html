@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        
+            Types of Hashing Algorithms
+                
+    </title>
+    <meta name="description" content="Explore various types of hashing algorithms, their comparisons, and find out when to use each for optimal security and performance.">
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+    Deepak Gupta: A Passionate Advocate for Innovation and Security
+</title>
+<link rel="icon" type="image/x-icon" href="https://guptadeepak.com/content/images/size/w256h256/2022/08/square--mark-only-1.png">
+
+    
+        <link
+            href="https://fonts.googleapis.com/css2?family=sans-serif:wght@400;500;600&display=swap"
+            rel="stylesheet">
+        
+        <link
+            href="https://fonts.googleapis.com/css2?family=serif:wght@500;600;700&display=swap"
+            rel="stylesheet">
+        
+            
+                <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.gracker.ai/style.min.css">
+                <link rel="stylesheet"
+                    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/vs2015.min.css">
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+                <!-- and it's easy to individually load additional languages -->
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+
+                <script>hljs.highlightAll();</script>
+
+                <style>
+                    :root {
+                        --primary-color: #15171A;
+                        --secondary-color: ;
+                        --background-color: ;
+                        --text-color: #ffffff;
+                        --accent-color: #15171A;
+                        --font-primary: sans-serif, Arial, sans-serif;
+                        --font-secondary: serif, Arial, sans-serif;
+                    }
+                </style>
+</head>
+
+<body>
+    <header class="header group" id="main-header">
+    <div class="navigation">
+        <div class="header-item item-left">
+            <div class="logo"><a href="https://guptadeepak.com/"><img src="https://guptadeepak.com/content/images/2023/06/square--mark-only--transparent.png" 
+                onerror="this.onerror=null; this.src='https://www.adaptivewfs.com/wp-content/uploads/2020/07/logo-placeholder-image.png'" 
+                alt="Primary Image"  height="40" /></a></div>
+        </div>
+
+        <div class="header-item item-center">
+            <div class="menu-overlay"></div>
+            <nav class="menu">
+                <div class="mobile-menu-head">
+                    <div class="go-back">
+                        &lt;
+                    </div>
+                    <div class="current-menu-title"></div>
+                    <div class="mobile-menu-close">&times;</div>
+                </div>
+                <ul class="menu-main">
+                    <li>
+                        <a href="https://guptadeepak.com/">Home</a>
+                    </li>
+                    <li>
+                        <a href="https://guptadeepak.com/" class="btn btn-primary show-in-mobile demo-btn">
+                            Get Started
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header-item item-right nav-right">
+            <a href="https://guptadeepak.com/" class="btn btn-ghost dark hide-in-mobile">
+                Get Started
+            </a>
+            <div class="mobile-menu-trigger">
+                <span></span>
+            </div>
+        </div>
+
+
+
+    </div>
+</header>
+        <main class="homeMainInner">
+            <section class="hero">
+                <div>
+                    <ul class="breadcrumb">
+                        <li><a href="/">Home</a></li>
+                        <li class="seprator">/</li>
+                
+                        
+                            <li>
+                                <a href="#">hashing algorithms, comparison and when to use which hashing algorithm</a>
+                            </li>
+                            <li class="seprator">/</li>
+                        
+                
+                        <li>Types of Hashing Algorithms</li>
+                    </ul>
+                    <div class="title header">
+                        <h1>Types of Hashing Algorithms</h1>
+                    </div>
+                </div>
+                
+            </section>
+            <section class="category-section page-content">
+                <div class="content has-space">
+                    <p>
+                        Welcome to our comprehensive guide on **Types of Hashing Algorithms**, where we delve into the fascinating world of cryptographic security and data integrity. Hashing algorithms play a crucial role in various applications, from securing passwords to verifying data integrity in digital transactions. In this article, we will explore the different types of hashing algorithms, compare their strengths and weaknesses, and provide insights on when to use each algorithm for optimal performance and security. Whether you&#39;re a cybersecurity professional, a software developer, or just curious about data protection, this guide will equip you with the knowledge to make informed decisions about hashing in your projects. Dive in to discover how the right hashing algorithm can enhance your data security strategy!
+                    </p>
+                    
+                        <h2>Introduction</h2>
+<p>In the digital age, securing data and ensuring its integrity is paramount. Hashing algorithms play a crucial role in this process by transforming input data into a fixed-length string of characters, which is typically a digest that represents the original input. This webpage will explore the different types of hashing algorithms, their unique features, and practical applications, helping you understand when to use which hashing algorithm effectively.</p>
+
+                            
+                        <h2>Types of Hashing Algorithms</h2>
+<h3>1. Cryptographic Hash Functions</h3>
+<p>Cryptographic hash functions are designed to be secure and are commonly used in various security applications. Key features include:</p>
+<ul>
+<li><strong>Irreversibility</strong>: It&#39;s computationally infeasible to revert the hash back to its original data.</li>
+<li><strong>Collision Resistance</strong>: Two different inputs should not produce the same hash output.</li>
+<li><strong>Example Algorithms</strong>: <ul>
+<li><strong>SHA-256</strong>: Part of the SHA-2 family, widely used in blockchain and digital signatures.</li>
+<li><strong>SHA-3</strong>: The latest member of the Secure Hash Algorithm family, offering enhanced security features.</li>
+</ul>
+</li>
+</ul>
+<h3>2. Non-Cryptographic Hash Functions</h3>
+<p>Non-cryptographic hash functions prioritize speed and efficiency over security. They are typically used for data integrity checks and data structure implementations.</p>
+<ul>
+<li><strong>Use Cases</strong>: <ul>
+<li><strong>Hash Tables</strong>: For quick data retrieval in computing.</li>
+<li><strong>Checksums</strong>: To verify data integrity during transmission.</li>
+</ul>
+</li>
+<li><strong>Example Algorithms</strong>: <ul>
+<li><strong>MurmurHash</strong>: Known for its fast performance in non-secure applications.</li>
+<li><strong>CityHash</strong>: Optimized for hashing strings quickly.</li>
+</ul>
+</li>
+</ul>
+<h3>3. Checksums and Error-Checking Algorithms</h3>
+<p>While not traditional hashing algorithms, checksums and error-checking algorithms serve a similar purpose of verifying data integrity.</p>
+<ul>
+<li><strong>Functionality</strong>: These algorithms compute a small-sized checksum from a larger data set, making it easier to detect accidental changes.</li>
+<li><strong>Example Algorithms</strong>: <ul>
+<li><strong>CRC32</strong>: Commonly used in network communications and file storage.</li>
+<li><strong>Adler-32</strong>: A checksum algorithm that is faster than CRC32 but less robust against collisions.</li>
+</ul>
+</li>
+</ul>
+<h3>4. Specialized Hashing Algorithms</h3>
+<p>Some hashing algorithms are tailored for specific applications, often balancing between speed and security based on use cases.</p>
+<ul>
+<li><strong>Use Cases</strong>: <ul>
+<li><strong>Password Hashing</strong>: Secure storage of passwords using algorithms that are resistant to brute-force attacks.</li>
+</ul>
+</li>
+<li><strong>Example Algorithms</strong>: <ul>
+<li><strong>bcrypt</strong>: Designed for secure password hashing, incorporating a salt to protect against rainbow table attacks.</li>
+<li><strong>PBKDF2</strong>: A key derivation function that applies a hashing algorithm multiple times to enhance security.</li>
+</ul>
+</li>
+</ul>
+
+                            
+                        <h2>Conclusion</h2>
+<p>Understanding the different types of hashing algorithms is essential for making informed decisions about data security and integrity. By evaluating the characteristics and intended use cases of each algorithm, you can select the most suitable one for your needs. Whether you require a cryptographic solution for sensitive data or a fast non-cryptographic hash for performance, the right hashing algorithm can significantly impact the effectiveness of your data management strategies.</p>
+
+                            
+                </div>
+            </section>
+
+            
+
+
+        </main>
+        <script>
+            // Get all h2 elements
+            const h2Elements = document.querySelectorAll('h2');
+
+            // Loop through the h2 elements and find the one with the text 'References'
+            h2Elements.forEach(h2 => {
+                if (h2.textContent.trim() === 'References') {
+                    // Get the next sibling element, which should be the ul
+                    const nextElement = h2.nextElementSibling;
+
+                    // Check if the next element is a ul
+                    if (nextElement && nextElement.tagName === 'UL') {
+                        // Get all anchor tags inside the ul and add target="_blank"
+                        const anchorTags = nextElement.querySelectorAll('a');
+                        anchorTags.forEach(anchor => {
+                            anchor.setAttribute('target', '_blank');
+                        });
+                    }
+                }
+            });
+        </script>
+        <footer>
+    <div>
+        <div class="left-block">
+            <div class="logo">
+                <a href="https://guptadeepak.com/">
+                  <img src="https://guptadeepak.com/content/images/2023/06/square--mark-only--transparent.png" 
+                       onerror="this.onerror=null; this.src='https://www.adaptivewfs.com/wp-content/uploads/2020/07/logo-placeholder-image.png'" 
+                       alt="Primary Image" 
+                       height="40" />
+                </a>
+              </div>
+            <div class="copyright">
+                Meet the Tech Entrepreneur, Cybersecurity Author, and Researcher &copy; 2024
+            </div>
+        </div>
+        <div class="footer-content">
+            <nav class="footer-nav">
+                <ul>
+                    
+                        
+                            <li>
+                                <a href="https://www.linkedin.com/in/dpgupta" target="_blank" rel="noopener noreferrer">
+                                    LinkedIn
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://x.com/dip_ak" target="_blank" rel="noopener noreferrer">
+                                    X
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://gupta-deepak.medium.com/" target="_blank" rel="noopener noreferrer">
+                                    Medium
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://www.youtube.com/@deepak-gupta" target="_blank" rel="noopener noreferrer">
+                                    YouTube
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://instagram.com/dgupta10" target="_blank" rel="noopener noreferrer">
+                                    Instagram
+                                </a>
+                            </li>
+                            
+                                
+                </ul>
+            </nav>
+        </div>
+    </div>
+</footer>
+
+<script>
+    let scrollpos = window.scrollY;
+    const header = document.querySelector("header");
+    const navItems = document.querySelectorAll("nav .menu-item-has-children>a"); // Adjust the selector based on your menu items
+    const navSubItems = document.querySelectorAll("nav .menu-item-has-children .sub-menu.mega-menu"); // Adjust the selector based on your menu items
+
+    const add_class_on_scroll = () => header.classList.add("scroll");
+    const remove_class_on_scroll = () => header.classList.remove("scroll");
+
+    const add_class_on_hover = () => header.classList.add("hover");
+    const remove_class_on_hover = () => header.classList.remove("hover");
+
+    const check_scroll_position = () => {
+        scrollpos = window.scrollY;
+        if (scrollpos >= 80) {
+            add_class_on_scroll();
+        } else {
+            remove_class_on_scroll();
+        }
+    };
+
+    // Add or remove class based on scroll position
+    window.addEventListener("scroll", check_scroll_position);
+
+    // Add class on hover
+    navItems.forEach((item) => {
+        item.addEventListener("mouseenter", add_class_on_hover);
+        item.addEventListener("mouseleave", remove_class_on_hover);
+    });
+
+    // Add class on click
+    // navItems.forEach((item) => {
+    // 	item.addEventListener("click", add_class_on_hover);
+    // });
+
+    // Add class on hover
+    navSubItems.forEach((item) => {
+        item.addEventListener("mouseenter", add_class_on_hover);
+        item.addEventListener("mouseleave", remove_class_on_hover);
+    });
+
+    // Add class on click
+    navSubItems.forEach((item) => {
+        item.addEventListener("click", add_class_on_hover);
+    });
+    // Initial check when the page loads
+    document.addEventListener("DOMContentLoaded", check_scroll_position);
+    window.addEventListener("scroll", check_scroll_position);
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const dropdownButton = document.getElementById("dropdown-button");
+
+        if (dropdownButton) {
+            dropdownButton.addEventListener("click", () => {
+                document.body.classList.toggle("dropdown-open");
+            });
+        }
+    });
+
+    const menu = document.querySelector(".menu");
+    const menuMain = menu.querySelector(".menu-main");
+    const goBack = menu.querySelector(".go-back");
+    const menuTrigger = document.querySelector(".mobile-menu-trigger");
+    const closeMenu = menu.querySelector(".mobile-menu-close");
+    let subMenu;
+    menuMain.addEventListener("click", (e) => {
+        if (!menu.classList.contains("active")) {
+            return;
+        }
+        if (e.target.closest(".menu-item-has-children")) {
+            const hasChildren = e.target.closest(".menu-item-has-children");
+            showSubMenu(hasChildren);
+        }
+    });
+    goBack.addEventListener("click", () => {
+        hideSubMenu();
+    });
+    menuTrigger.addEventListener("click", () => {
+        toggleMenu();
+    });
+    closeMenu.addEventListener("click", () => {
+        toggleMenu();
+    });
+    document.querySelector(".menu-overlay").addEventListener("click", () => {
+        toggleMenu();
+    });
+    function toggleMenu() {
+        menu.classList.toggle("active");
+        document.querySelector(".menu-overlay").classList.toggle("active");
+    }
+    function showSubMenu(hasChildren) {
+        subMenu = hasChildren.querySelector(".sub-menu");
+        subMenu.classList.add("active");
+        subMenu.style.animation = "slideLeft 0.5s ease forwards";
+        const menuTitle =
+            hasChildren.querySelector(".chevronDown").parentNode.childNodes[0].textContent;
+        menu.querySelector(".current-menu-title").innerHTML = menuTitle;
+        menu.querySelector(".mobile-menu-head").classList.add("active");
+    }
+
+    function hideSubMenu() {
+        subMenu.style.animation = "slideRight 0.5s ease forwards";
+        setTimeout(() => {
+            subMenu.classList.remove("active");
+        }, 300);
+        menu.querySelector(".current-menu-title").innerHTML = "";
+        menu.querySelector(".mobile-menu-head").classList.remove("active");
+    }
+
+    window.onresize = function () {
+        if (this.innerWidth > 991) {
+            if (menu.classList.contains("active")) {
+                toggleMenu();
+            }
+        }
+    };
+
+</script>
+
+<script defer>
+    function updateLogoWidth() {
+        // Select elements
+        const ctaElement = document.querySelector('.item-right');
+        const logoElement = document.querySelector('.item-left');
+
+        // Get the computed width of CTA
+        const ctaWidth = ctaElement.getBoundingClientRect().width;
+    
+
+        // Apply the width to logo element
+        if (ctaWidth > 0) {
+            logoElement.style.width = `${ctaWidth}px`;
+        }
+    }
+
+    // Run on page load with a slight delay to ensure styles are applied
+    document.addEventListener('DOMContentLoaded', function () {
+        setTimeout(updateLogoWidth, 100);
+    });
+
+    // Run whenever window is resized
+    window.addEventListener('resize', updateLogoWidth);
+</script>
+</body>
+
+</html>

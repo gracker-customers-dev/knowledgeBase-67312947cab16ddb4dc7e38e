@@ -1,0 +1,70 @@
+projectName: Meet the Tech Entrepreneur, Cybersecurity Author, and Researcher
+jsonFilePath: ./input.json
+baseUrl: https://guptadeepak.com
+portalHeading: Meet the Tech Entrepreneur, Cybersecurity Author, and Researcher
+portalDescription: >-
+  Learn more about Deepak Gupta's work on the cutting edge of cybersecurity and
+  how he is helping to protect businesses from cyber threats.
+portalTitle: 'Deepak Gupta: A Passionate Advocate for Innovation and Security'
+searchPlaceholder: Search this site
+useAlphabetsCategory: true
+homeLink: https://guptadeepak.com/
+logoLink: https://guptadeepak.com/
+ctaText: Get Started
+aboutLink: https://guptadeepak.com/about/
+productsLink: https://guptadeepak.com/
+logoImgUrl: >-
+  https://guptadeepak.com/content/images/2023/06/square--mark-only--transparent.png
+ctaLink: https://guptadeepak.com/
+copyrightText: Meet the Tech Entrepreneur, Cybersecurity Author, and Researcher &copy; 2024
+faviconUrl: >-
+  https://guptadeepak.com/content/images/size/w256h256/2022/08/square--mark-only-1.png
+googleTagManagerId: GTM-NN5V68C
+pagesTitle:
+  prefix: ''
+  suffix: ''
+categoryPagesTitle:
+  prefix: ''
+  suffix: ''
+templateRoot:
+  - ./templates
+  - ./templates
+homeTemplatePath: ./templates/homePageTemplate.ejs
+categoryTemplatePath: ./templates/categoryTemplate.ejs
+pageTemplatePath: ./templates/pagesTemplate.ejs
+outputDir: ./output
+socialLinks:
+  - platform: LinkedIn
+    url: https://www.linkedin.com/in/dpgupta
+  - platform: X
+    url: https://x.com/dip_ak
+  - platform: Medium
+    url: https://gupta-deepak.medium.com/
+  - platform: YouTube
+    url: https://www.youtube.com/@deepak-gupta
+  - platform: Instagram
+    url: https://instagram.com/dgupta10
+theme:
+  primaryColor: '#15171A'
+  secondaryColor: ''
+  backgroundColor: ''
+  textColor: '#ffffff'
+  accentColor: '#15171A'
+fonts:
+  - family: sans-serif
+    weights:
+      - 400
+      - 500
+      - 600
+  - family: serif
+    weights:
+      - 500
+      - 600
+      - 700
+data:
+  - categoryName: default
+    categorySlug: /
+    pages:
+      - pageTitle: Off-Page SEO
+      - pageTitle: Compliance
+      - pageTitle: Customer Engagement
